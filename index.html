@@ -1,0 +1,47 @@
+<DOCTYPE>
+
+	<head>
+        <script src="./node_modules/jquery/dist/jquery.js"></script>
+        <script src="./node_modules/lodash/lodash.js"></script>
+		<script src="./src/app.js" type="module"></script>
+		<link rel="stylesheet" type="text/css" href="./dist/resets.css" />
+		<link rel="stylesheet" type="text/css" href="./dist/page.css" />
+	</head>
+
+	<body>
+		<header>
+			<div class="header-logo">
+				<img src='./images/pushbot-peeker.png' />
+				<h1>Pushbot
+					<span class="version-number">1.10.17</span>
+				</h1>
+			</div>
+			<nav class="header-links">
+				<div class="links left">
+					<a href="">Tasks</a>
+					<a href="">Routines</a>
+					<a href="">Templates</a>
+				</div>
+				<div class="links right">
+					<a href="">Team</a>
+					<a href="">Settings</a>
+				</div>
+			</nav>
+        </header>
+        <div class="main-wrapper">
+            <aside class="outline">
+                <section class="inactive">
+                    <div class="header">Triggers</div>
+                </section>
+                <section class="active steps">
+                    <div class="header">Steps</div>
+                </section>
+            </aside>
+            <main>
+				<section class="process"></section>
+				<section class="details"></section>
+			</main>
+        </div>
+	</body>
+</DOCTYPE>
+

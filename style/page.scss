@@ -1,0 +1,221 @@
+$white: #fff;
+$purple: #3F4258;
+$darkPurple: darken($purple, 10);
+$aqua: darken(aqua, 5);
+$backgroundGray: #E8ECF1; 
+$activeBackground: #F3F3F4;
+$fontColor: #333;
+$subFontColor: lighten($fontColor, 50);
+
+:root {
+    font-size: 62.5%;
+    color: $fontColor;
+}
+
+h1 {
+    font-size:2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: $backgroundGray;
+}
+
+
+header {
+    background-color: $purple;
+    height: 3rem;
+
+    .header-logo {
+        background-color: $darkPurple;
+        width: 16rem;
+        padding: 0 1rem;
+        height: 3rem;
+        position: relative;
+        float: left;
+
+        img {
+            width: 4.4rem;
+        }
+
+        h1 {
+            position: absolute;
+            left: 7rem;
+            top: 5px;
+            color: $white;
+            width: 100%;
+            margin: 0;
+        }
+
+        .version-number {
+            font-size: 1rem;
+            color: grey;
+        }
+    }
+
+    .header-links {
+        position: relative;
+        top: 0;
+
+        .links {
+            display: inline-block;
+            position: absolute;
+            top: 1rem;
+            font-size: 1.2rem;
+
+            &.right {
+                right: 1rem;
+            }
+            &.left {
+                left: 19rem;
+            }
+
+            a {
+                color: $white;
+                padding-right: 1rem;
+            }
+        }
+    }
+}
+
+aside {
+    position: absolute;
+    top: 3rem;
+    bottom: 0;
+    left: 0;
+    overflow-y: scroll;
+    width: 22rem;
+    border-right: 1px solid $backgroundGray;
+
+    .header {
+        height: 2rem;
+        padding: 1rem;
+        background-color: $aqua;
+        color: $white;
+        text-align: center;
+        border-bottom: 1px solid $white;
+    }
+
+    .step-outline {
+        height: 5rem;
+        padding: 1rem;
+        background-color: $white;
+        font-size: 1rem;
+        border-bottom: 1px solid $backgroundGray;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        .step-number {
+            margin-right: 2rem;
+            font-size: 2rem;
+            margin-top: 1rem;
+            display: inline-block;
+            color: lighten($fontColor, 10);
+            float: left;
+        }
+
+        .step-name {
+            display: block;
+            margin-top: 1rem;
+        }
+    }
+
+    .active {
+        background-color: $activeBackground;
+    }
+}
+
+main {
+    position: absolute;
+    left: 22rem;
+    top: 5rem;
+    bottom: 0;
+    right: 0;
+    overflow-y: auto;
+
+    .process{
+        border-bottom: 1px solid $fontColor;
+        margin: 1rem;
+
+        .toggle {
+            margin: 2rem 0 1rem;
+            display: block;
+        }
+    }
+
+    .text-block {
+        height: 4rem;
+        border-bottom: 1px solid $subFontColor;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        position: relative;
+
+        .text {
+            position: absolute;
+            bottom: .5rem;
+            left: 0;
+        }
+
+        input {
+            position: absolute;
+            bottom: .5rem;
+            width: 100%;
+        }
+        .edit {
+            display: block;
+            cursor: pointer;
+        }
+    }
+}
+
+
+.subtext {
+    color: $subFontColor;
+}
+
+.field-text {
+    display: block;
+}
+
+.toggle {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.details {
+    background-color: $white;
+    max-width: 50rem;
+    min-width: 30rem;
+    margin: 0 1rem;
+    padding: 1rem;
+
+    .title {
+        font-size: 1.4rem;
+        margin-bottom: .75rem;
+        display: block;
+    }
+
+    .field-text {
+        font-size: 1rem;
+        margin:.5rem 0 .75rem;
+    }
+}
+
+.users {
+    .user {
+        width: 5rem;
+        text-align: center;
+        display: inline-block;
+        margin: .5rem;
+
+        img {
+            height: 4rem;
+        }
+    }
+}

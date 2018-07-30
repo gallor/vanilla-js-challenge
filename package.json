@@ -1,0 +1,27 @@
+{
+    "name": "coding-challenge-frontend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "npm run build-css && http-server -p 3000",
+        "build-css": "node-sass-chokidar style/ -o dist/",
+        "watch-css": "npm run build-css && node-sass-chokidar style/ -o dist/ --watch --recursive"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/catalyticlabs/coding-challenge-frontend.git"
+    },
+    "dependencies": {
+        "http-server": "^0.11.1",
+        "jquery": "^3.3.1",
+        "lodash": "^4.17.5",
+        "node-sass-chokidar": "^1.2.2"
+    },
+    "author": "Grant Allor",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/catalyticlabs/coding-challenge-frontend/issues"
+    },
+    "homepage": "https://github.com/catalyticlabs/coding-challenge-frontend#readme"
+}

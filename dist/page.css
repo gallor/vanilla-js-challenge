@@ -1,0 +1,148 @@
+:root {
+  font-size: 62.5%;
+  color: #333; }
+
+h1 {
+  font-size: 2rem; }
+
+a {
+  text-decoration: none; }
+
+body {
+  background-color: #E8ECF1; }
+
+header {
+  background-color: #3F4258;
+  height: 3rem; }
+  header .header-logo {
+    background-color: #2a2c3a;
+    width: 16rem;
+    padding: 0 1rem;
+    height: 3rem;
+    position: relative;
+    float: left; }
+    header .header-logo img {
+      width: 4.4rem; }
+    header .header-logo h1 {
+      position: absolute;
+      left: 7rem;
+      top: 5px;
+      color: #fff;
+      width: 100%;
+      margin: 0; }
+    header .header-logo .version-number {
+      font-size: 1rem;
+      color: grey; }
+  header .header-links {
+    position: relative;
+    top: 0; }
+    header .header-links .links {
+      display: inline-block;
+      position: absolute;
+      top: 1rem;
+      font-size: 1.2rem; }
+      header .header-links .links.right {
+        right: 1rem; }
+      header .header-links .links.left {
+        left: 19rem; }
+      header .header-links .links a {
+        color: #fff;
+        padding-right: 1rem; }
+
+aside {
+  position: absolute;
+  top: 3rem;
+  bottom: 0;
+  left: 0;
+  overflow-y: scroll;
+  width: 22rem;
+  border-right: 1px solid #E8ECF1; }
+  aside .header {
+    height: 2rem;
+    padding: 1rem;
+    background-color: #00e6e6;
+    color: #fff;
+    text-align: center;
+    border-bottom: 1px solid #fff; }
+  aside .step-outline {
+    height: 5rem;
+    padding: 1rem;
+    background-color: #fff;
+    font-size: 1rem;
+    border-bottom: 1px solid #E8ECF1; }
+    aside .step-outline:hover {
+      cursor: pointer; }
+    aside .step-outline .step-number {
+      margin-right: 2rem;
+      font-size: 2rem;
+      margin-top: 1rem;
+      display: inline-block;
+      color: #4d4d4d;
+      float: left; }
+    aside .step-outline .step-name {
+      display: block;
+      margin-top: 1rem; }
+  aside .active {
+    background-color: #F3F3F4; }
+
+main {
+  position: absolute;
+  left: 22rem;
+  top: 5rem;
+  bottom: 0;
+  right: 0;
+  overflow-y: auto; }
+  main .process {
+    border-bottom: 1px solid #333;
+    margin: 1rem; }
+    main .process .toggle {
+      margin: 2rem 0 1rem;
+      display: block; }
+  main .text-block {
+    height: 4rem;
+    border-bottom: 1px solid #b3b3b3;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    position: relative; }
+    main .text-block .text {
+      position: absolute;
+      bottom: .5rem;
+      left: 0; }
+    main .text-block input {
+      position: absolute;
+      bottom: .5rem;
+      width: 100%; }
+    main .text-block .edit {
+      display: block;
+      cursor: pointer; }
+
+.subtext {
+  color: #b3b3b3; }
+
+.field-text {
+  display: block; }
+
+.toggle:hover {
+  cursor: pointer; }
+
+.details {
+  background-color: #fff;
+  max-width: 50rem;
+  min-width: 30rem;
+  margin: 0 1rem;
+  padding: 1rem; }
+  .details .title {
+    font-size: 1.4rem;
+    margin-bottom: .75rem;
+    display: block; }
+  .details .field-text {
+    font-size: 1rem;
+    margin: .5rem 0 .75rem; }
+
+.users .user {
+  width: 5rem;
+  text-align: center;
+  display: inline-block;
+  margin: .5rem; }
+  .users .user img {
+    height: 4rem; }
